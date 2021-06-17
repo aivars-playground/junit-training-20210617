@@ -15,7 +15,7 @@ public class GlobalCalendar {
         return entries;
     }
 
-    public void  addCalendarEntry(CalendarEntry entry) {
+    public void  addEntry(CalendarEntry entry) {
         entries.add(entry);
     }
 }
