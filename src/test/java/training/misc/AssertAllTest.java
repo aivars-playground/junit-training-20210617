@@ -9,7 +9,6 @@ public class AssertAllTest {
 
     @Test
     void testAll() {
-
         var a = 2;
 
         assertAll(
