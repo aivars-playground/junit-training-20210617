@@ -4,7 +4,13 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class Lifecycle1IT {
+
+    public Lifecycle1IT() {
+        //calls once
+        System.out.println("constructor1");
+    }
 
     @BeforeAll
     static void beforeAll() {

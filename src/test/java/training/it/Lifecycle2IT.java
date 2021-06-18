@@ -4,7 +4,13 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
 class Lifecycle2IT {
+
+    public Lifecycle2IT() {
+        //calls before each method
+        System.out.println("constructor2");
+    }
 
     @BeforeAll
     static void beforeAll() {
