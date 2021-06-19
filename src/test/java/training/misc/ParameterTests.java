@@ -5,9 +5,16 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.TestReporter;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.converter.ArgumentConversionException;
+import org.junit.jupiter.params.converter.ConvertWith;
+import org.junit.jupiter.params.converter.TypedArgumentConverter;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.EmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import java.util.stream.LongStream;
+import javax.xml.transform.Source;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ParameterTests {
 
@@ -37,4 +44,36 @@ public class ParameterTests {
         reporter.publishEntry("@@@@@@@@@@@ID:", String.valueOf(id));
     }
 
+    @ParameterizedTest()
+    @EmptySource
+    void testEmptySource(String empty) {
+        assertTrue(empty.isEmpty());
+    }
+
+    @ParameterizedTest(name = "{2} = {0} + {1}, arguments:{arguments}")
+    @CsvSource(value = {"1,2,3","4,5,9"})
+    void testCsvSyntax(Integer a, Integer b, Integer c) {
+        assertEquals(c, a+b);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"asm"})
+    void testStartsWithCharA(
+            @ConvertWith(FirstLetterExtractor.class) Character firstChar
+    ) {
+        assertEquals(firstChar, 'a');
+    }
+
+}
+
+class FirstLetterExtractor extends TypedArgumentConverter<String, Character>  {
+
+    protected FirstLetterExtractor() {
+        super(String.class, Character.class);
+    }
+
+    @Override
+    protected Character convert(String source) throws ArgumentConversionException {
+        return source.charAt(0);
+    }
 }
