@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BDD {
+public class ThisLooksLikeBDDTest {
 
     @DisplayName("Given that a = 1")
     @Nested
