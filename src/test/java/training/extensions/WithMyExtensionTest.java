@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(MyClassLevelExtension.class)
-public class WithCustomExtensionTest {
+public class WithMyExtensionTest {
 
     @Test
     void emptyTest1() {
