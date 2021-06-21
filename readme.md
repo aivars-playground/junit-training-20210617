@@ -13,3 +13,9 @@ plugin needs additional configuration (https://mincong.io/2018/10/04/maven-fails
 Links
 ==
 https://mincong.io/about/
+
+
+Test Double
+==
+https://martinfowler.com/bliki/TestDouble.html  
+

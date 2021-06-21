@@ -1,4 +1,4 @@
-package training.extensions;
+package training.junit.extensions;
 
 import org.junit.jupiter.api.extension.*;
 

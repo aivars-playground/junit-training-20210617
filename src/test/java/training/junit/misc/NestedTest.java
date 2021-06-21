@@ -1,4 +1,4 @@
-package training.misc;
+package training.junit.misc;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;

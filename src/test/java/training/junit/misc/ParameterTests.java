@@ -1,4 +1,4 @@
-package training.misc;
+package training.junit.misc;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -11,8 +11,6 @@ import org.junit.jupiter.params.converter.TypedArgumentConverter;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.EmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import javax.xml.transform.Source;
 
 import static org.junit.jupiter.api.Assertions.*;
 

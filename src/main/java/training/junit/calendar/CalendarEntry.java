@@ -1,4 +1,4 @@
-package training.calendar;
+package training.junit.calendar;
 
 import java.util.Objects;
 

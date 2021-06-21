@@ -1,4 +1,4 @@
-package training.misc;
+package training.junit.misc;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-//not picked up by mavan currently, but can be executed from IntelliJ
-public class ThisLooksLikeBDD {
+public class ThisLooksLikeBDDTest {
 
     @DisplayName("Given that a = 1")
     @Nested

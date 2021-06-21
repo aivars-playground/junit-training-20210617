@@ -1,4 +1,4 @@
-package training.it;
+package training.junit.it;
 
 import org.junit.jupiter.api.*;
 

@@ -1,7 +1,5 @@
-package training.extensions;
+package training.junit.extensions;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.*;
 
 public class MyClassLevelExtension implements

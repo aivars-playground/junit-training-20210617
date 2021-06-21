@@ -1,4 +1,4 @@
-package training.misc;
+package training.junit.misc;
 
 public class Exceptional {
     public void doThrowException() {
