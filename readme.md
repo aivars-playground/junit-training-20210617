@@ -19,3 +19,23 @@ Test Double
 ==
 https://martinfowler.com/bliki/TestDouble.html  
 
+
+TDD: Test Styles
+===
+https://blog.devgenius.io/detroit-and-london-schools-of-test-driven-development-3d2f8dca71e5
+
+Testing state (Classicist, Detroit style)  
+--
+Test-driven development - Kent Beck  
+verify outcome  
+stubbing could be enough  
+test setup grows larger
+Unit - class / method/
+
+test
+
+Testing behavior (Mockist, London style)  
+--
+Steve Freeman
+mocking  
+test setup smaller / context limited
